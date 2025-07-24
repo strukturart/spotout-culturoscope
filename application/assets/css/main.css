@@ -1,0 +1,124 @@
+*:before,
+*:after {
+  border: 0px;
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+
+  /* Careful, this breaks the word wherever it is without a hyphen */
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  scroll-behavior: auto;
+  /* Adds a hyphen where the word breaks */
+  -webkit-hyphens: auto;
+  -ms-hyphens: auto;
+  -moz-hyphens: auto;
+  hyphens: auto;
+  scrollbar-width: none;
+}
+
+::-webkit-scrollbar {
+  display: none !important;
+}
+
+.row {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+#intro {
+  min-width: 105vw;
+  height: 100vh;
+  background: rgb(15, 17, 20);
+  position: fixed;
+  z-index: 2000000;
+  top: 0;
+  left: 0;
+  opacity: 1;
+  visibility: visible;
+  transition: opacity 1s ease-in-out, visibility 2s linear 4s;
+}
+
+#intro.hide {
+  opacity: 0;
+  visibility: hidden;
+}
+
+article {
+  padding: 30px !important;
+  outline: 2px solid rgb(238, 230, 230);
+  margin: 0px;
+}
+
+article div.action-buttons {
+  margin: 20px 0 20px 0;
+}
+
+article img {
+  margin: 20px 0 20px 0;
+}
+
+.debug {
+  outline: 2px solid red;
+}
+
+#map-container {
+  min-width: 100%;
+  min-height: 100vh;
+}
+
+.leaflet-marker-icon,
+.leaflet-marker-shadow {
+  all: unset;
+  display: block;
+  position: absolute;
+
+  padding: 0;
+  margin: 0;
+  background: none !important;
+  outline: none !important;
+  border: none !important;
+}
+
+nav {
+  position: sticky;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: black;
+  z-index: 1000;
+  min-width: 100vw;
+}
+
+nav .logo {
+  max-width: 50px;
+}
+
+nav li a {
+  font-size: 1.3rem;
+}
+
+main {
+  margin: 50px;
+}
+#filter-reset {
+  margin: 0 0 20px 0;
+}
+
+#filter-list {
+  position: fixed;
+  height: 0px;
+  overflow: hidden;
+  margin: 0 0 20px 0;
+}
+
+.filter-list-button {
+  margin: 0 5px 5px 0px;
+}
+.filter-list-button:hover {
+  background: red;
+}
+
+#about .text {
+  text-align: left;
+}
