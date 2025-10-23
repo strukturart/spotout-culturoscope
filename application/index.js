@@ -146,7 +146,7 @@ document.addEventListener("DOMContentLoaded", function (e) {
       // Daten von API laden
       const response = await m.request({
         method: "GET",
-        url: "https://yellow-base-40e2.strukturart.workers.dev/",
+        url: "https://culturoscope-add-location.strukturart.workers.dev/",
       });
 
       todosList = response.events.filter((e) => e.address_latlng != null);
